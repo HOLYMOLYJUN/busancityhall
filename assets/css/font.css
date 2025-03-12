@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'KOHIBaeum';
+    src: 
+    url('../font/KOHIBaeum.eot') format('embedded-opentype'),
+    url('../font/KOHIBaeum.woff') format('woff'),
+    url('../font/KOHIBaeum.woff2') format('woff2');
+    font-weight: normal;
+}

@@ -1,0 +1,272 @@
+@import "./reset.css";
+
+/* header */
+header {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 0px 0px 30px;
+    transition: all 0.4s;
+}
+header.active {
+    background-color: #fff;
+}
+
+
+header .info-top {
+    position: relative;
+}
+header .info-top .info-list {
+    display: flex;
+    justify-content: end;
+    gap: 25px;
+}
+
+header .info-top a {
+    position: relative;
+    font-size: 15px;
+    padding: 10px 0;
+    color: #fff;
+}
+
+header.active .info-top a {
+    color: #333;
+}
+header .info-top .info-item:last-child a {
+    padding-right: 40px;
+}
+
+header .info-top .info-item:last-child a::after {
+    position: absolute;
+    content: "";
+    display: block;
+    right: 0;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-50%);
+    background: url('../img/ico/ico_arrow_down_w.png') no-repeat 50% 60%;
+}
+header.active .info-top .info-item:last-child a::after {
+    background: url('../img/ico/ico_arrow_down_b.png') no-repeat 50% 60%;
+}
+
+
+
+header .info-top .info-item a:hover {
+    text-decoration: underline;
+}
+
+
+header .gnb {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    position: relative;
+}
+
+header .gnb .main_menu {
+    color: #fff;
+    font-size: 18px;
+}
+header.active .gnb .main_menu {
+    color: #333;
+}
+
+header .gnb .main-logo {
+    width: 170px;
+    height: 45px;
+    background: url('../img/busan_logo_wh.svg') no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+}
+header.active .gnb .main-logo {
+    background: url('../img/busan_logo.svg') no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+}
+
+
+
+header .gnb .main-logo a{ 
+    height: 100%;
+}
+
+header .gnb_list {
+    position: absolute;
+    width: 900px;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+    display: flex;
+    text-align: center;
+    z-index: 9;
+}
+
+header .gnb_list .gnb_item > a {
+    padding: 10px 0;
+    position: relative;
+}
+header .gnb_list .gnb_item > a:hover {
+    color: #e4007e !important;
+}
+
+header .gnb_list .gnb_item > a::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 1px;
+    height: 13px;
+    background: #ccc;
+}
+
+header .gnb_list .gnb_item:last-child > a::after {
+    display: none;
+}
+
+header .gnb_list .gnb_item {
+    flex: 0 0 20%;
+}
+
+
+header .sub_list {
+    padding: 25px 30px;
+    font-size: 16px;
+    
+    height: 458px;
+
+    text-align: left;
+
+    position: absolute;
+    width: 180px;
+    top: 65px;
+    border-right: 1px solid #ccc;
+    display: none;
+}
+header .gnb_item:first-child .sub_list {
+    border-left: 1px solid #ccc;
+}
+
+header .sub_list .sub_item .sub_menu {
+    position: relative;
+    padding-left: 15px;
+
+    padding: 5px 0;
+    padding-left: 10px;
+}
+
+header .sub_list .sub_item .sub_menu::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1px;
+    background-color: #333;
+    width: 5px;
+    left: 0;
+}
+
+header .sub_list .sub_item .sub_menu:hover::before {
+    background-color: #e4007e;
+}
+
+header .sub_list .sub_item .sub_menu:hover {
+    color: #e4007e !important;
+}
+
+header .search_sitemap_box {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+header .search_sitemap_box .search_btn {
+    width: 30px;
+    height: 30px;
+    background: url('../img/ico/ico_search_w.png') no-repeat;
+}
+header.active .search_sitemap_box .search_btn {
+    background: url('../img/ico/ico_search_b.png') no-repeat;
+}
+
+header .search_sitemap_box .sitemap_btn {
+    width: 25px;
+    height: 23px;
+    position: relative;
+}
+
+
+header .search_sitemap_box .sitemap_btn span {
+    position: absolute;
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+}
+header.active .search_sitemap_box .sitemap_btn span {
+    background-color: #333;
+}
+
+
+header .search_sitemap_box .sitemap_btn span.a {
+    top: 0;
+}
+
+header .search_sitemap_box .sitemap_btn span.b {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60%;
+}
+header .search_sitemap_box .sitemap_btn span.c {
+    bottom: 0;
+}
+
+header .menu_bg {
+    width: 100%;
+    height: 458px;
+    background-color: #fff;
+    position: relative;
+    top: 30px;
+    z-index: 1;
+    display: none;
+    border-top: 1px solid #e8e8e8;
+}
+
+
+
+
+
+
+
+main {
+    width: 100%;
+    height: 100%;
+    outline: 1px solid blue;
+    position: relative;
+}
+main .main_video_box {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent 30%);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+main video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}

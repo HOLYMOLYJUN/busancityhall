@@ -1,0 +1,8 @@
+@import "./reset.css";
+@import "./font.css";
+
+.inner {
+    width: 94%;
+    margin: 0 auto;
+    
+}
