@@ -1,27 +1,44 @@
 $(document).ready(function () {
-    // header에 마우스를 올리면 active 클래스 추가하고 sub_list slideDown
     $("header").hover(
         function () {
-            $(this).addClass("active"); // 마우스 오버 시 active 클래스 추가
-            $(".sub_list").stop().slideDown(); // 
-            // 모든 sub_list 슬라이드 다운
-            $(".menu_bg").stop().slideDown(); // menu_bg 슬라이드 다운
+            $(this).addClass("active"); 
+            $(".sub_list").stop().slideDown(); 
+            $(".menu_bg").stop().slideDown(); 
         },
         function () {
             if ($(window).scrollTop() === 0) {
-                $(this).removeClass("active"); // 스크롤이 0일 때만 active 클래스 제거
+                $(this).removeClass("active"); 
             }
-            $(".sub_list").stop().slideUp(); // 모든 sub_list 슬라이드 업
-            $(".menu_bg").stop().slideUp(); // menu_bg 슬라이드 업
+            $(".sub_list").stop().slideUp(); 
+            $(".menu_bg").stop().slideUp(); 
         }
     );
 
-    // 스크롤이 0보다 높으면 header에 active 클래스를 추가
     $(window).on("scroll", function () {
         if ($(window).scrollTop() > 0) {
-            $("header").addClass("active"); // 스크롤이 0보다 높으면 active 클래스 추가
+            $("header").addClass("active"); 
         } else {
-            $("header").removeClass("active"); // 스크롤이 0일 때 active 클래스 제거
+            $("header").removeClass("active");
         }
     });
+
+    $('.search_open_btn').click(function(){
+        let scrollBarWidth = window.innerWidth - document.documentElement.clientWidth; 
+        $("body").css({
+            "overflow": "hidden",
+            "padding-right": scrollBarWidth + "px" 
+        });
+        $(".main_search_box").show();
+        $('.search_open_btn').addClass('active');
+    });
+    
+    $('.close_search_box').click(function(){
+        $(".main_search_box").hide();
+        $("body").css({
+            "overflow": "",
+            "padding-right": "" 
+        });
+        $('.search_open_btn').removeClass('active');
+    });
+    
 });

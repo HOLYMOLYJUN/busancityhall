@@ -219,7 +219,7 @@
                     </li>
                     <li class="gnb_item">
                         <a href="#" class="main_menu">분야별정보</a>
-                        <ul class="sub_list">
+                        <ul class="sub_list ico_menu">
                             <li class="sub_item">
                                 <a href="#" class="sub_menu">
                                     경제
@@ -299,19 +299,38 @@
             </div>
         </div>
         <div class="menu_bg">
-
+            <span class="blind">서브메뉴배경</span>
         </div>
     </header>
 
 
 
     <!-- main -->
-    <main>
-        <div class="main_video_box">
+    <main id="main">
+        <div class="main_video_bg">
+            <span class="blind">비디오가시성개선</span>
         </div>
+
         <video preload="auto" class="video-bg tempClass" loop="" muted="" autoplay="" playsinline="" tabindex="0"> 
         <source src="./assets/video/main_vod_2025fab_05.mp4" type="video/mp4">
         </video>    
+
+        <div class="main_search_box">
+            <form method="get" name="searchForm" class="search_form">
+                <fieldset>
+                    <legend class="blind">검색</legend>
+                    <input type="text" class="search_input" placeholder="Search">
+                    <button type="submit" class="main_search_btn"></button>
+                </fieldset>
+            </form>
+            <button class="close_search_box">
+                <span class="blind">검색닫기</span>
+            </button>
+        </div>
+
+        <button class="search_open_btn">
+            <span class="blind">검색하기</span>
+        </button>
     </main>
 
     <section>
