@@ -1,0 +1,182 @@
+.sc_banner .ct01 {
+    width: 1400px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+}
+
+.sc_banner .policy-banner {
+    position: relative;
+    overflow: initial;
+    padding-bottom: 40px;
+    cursor: grab;
+}
+
+.sc_banner .policy-banner .swiper-button-prev, .sc_banner .policy-banner .swiper-button-next {
+    display: block;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    transform: translateY(-50%);
+}
+
+.swiper-button-prev, .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    width: 27px;
+    height: 44px;
+    margin-top: -22px;
+    z-index: 10;
+    cursor: pointer;
+    -moz-background-size: 27px 44px;
+    -webkit-background-size: 27px 44px;
+    background-size: 27px 44px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sc_banner .policy-banner .swiper-button-prev {
+    left: 0;
+}
+
+.sc_banner .policy-banner .swiper-button-next {
+    right: 0;
+}
+
+.sc_banner .policy-banner .swiper-button-prev::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/ico_arrow_large.png') no-repeat -17px -68px;
+}
+.sc_banner .policy-banner .swiper-button-next::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/ico_arrow_large.png') no-repeat -76px -68px;
+}
+
+
+
+
+
+
+.sc_banner .banner-button-prev, .sc_banner .banner-button-next {
+    display: none;
+    top: 50%;
+    background-size: 21px;
+    opacity: 0.7;
+}
+
+
+.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+    opacity: 0.35;
+    cursor: auto;
+    pointer-events: none;
+}
+
+
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+}
+
+.sc_banner .policy-banner .swiper-slide {
+    width: 896px !important;
+}
+
+.sc_banner .banner-slide {
+    filter: grayscale(100%);
+    transition: 0.4s;
+    opacity: 0;
+}
+
+.sc_banner .banner-slide.swiper-slide-active {
+    filter: grayscale(0);
+    transform: scale(1);
+    z-index: 1;
+    opacity: 1;
+}
+
+.sc_banner .banner-slide.swiper-slide-prev, .sc_banner .banner-slide.swiper-slide-next {
+    opacity: 0.4;
+}
+
+.sc_banner .banner-slide {
+    transform: scale(0.75);
+    z-index: -1;
+}
+.sc_banner .banner-slide a {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #dfdfdf;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.sc_banner .banner-slide a img {
+    height: 100%;
+    width: auto;
+    display: block;
+}
+
+.sc_banner .banner-pagination {
+    left: 25%;
+    width: 50%;
+    bottom: 1px;
+    position: absolute;
+    text-align: center;
+    transition: 300ms;
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sc_banner .policy-banner .swiper-pagination-bullet {
+    width: 17px;
+    height: 17px;
+    margin: 0 10px;
+    display: block;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+
+.sc_banner .policy-banner .swiper-pagination-bullet-active {
+    width: 45px;
+    background-color: #e4007e;
+    border-radius: 30px;
+    opacity: 0.9;
+}
+
+.sc_banner .btn-play {
+    bottom: -5px;
+    right: 300px;
+    position: absolute;
+    top: auto;
+    width: 30px;
+    height: 30px;
+    background: url('../img/ico/ico_controls.png') no-repeat;
+    background-position: 4px -20px;
+    text-indent: -9999px;
+    opacity: 0.4;
+    z-index: 10;
+}
+
+.sc_banner .btn-play.on {
+    background-position: -22px -23px;
+}

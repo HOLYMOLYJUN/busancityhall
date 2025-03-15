@@ -14,15 +14,23 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/layout.css">
     <link rel="stylesheet" href="./assets/css/common.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
-
-
-
+    <link rel="stylesheet" href="./assets/css/swiper.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/script.js"></script>
+
+
+    <!-- Swiper JS 불러오기 -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Custom JS 파일 연결 -->
+    <script src="./assets/js/swiper.js"></script>
 </head>
 
 <body>
+    
+    <!-- header -->
     <header class="header">
         <div class="inner">
 
@@ -52,7 +60,7 @@
             <div class="gnb">
                 <h1 class="main-logo">
                     <a href="#">
-                        <span   class="blind">부산광역시BUSAN METROPOLITAN CITY </span>
+                        <span class="blind">부산광역시BUSAN METROPOLITAN CITY </span>
                     </a>
                 </h1>
 
@@ -192,7 +200,7 @@
                             </li>
                             <li class="sub_item">
                                 <a href="#" class="sub_menu">
-                                    부산의 역사     
+                                    부산의 역사
                                 </a>
                             </li>
                             <li class="sub_item">
@@ -242,7 +250,7 @@
                             </li>
                             <li class="sub_item">
                                 <a href="#" class="sub_menu">
-                                    보건&middot;건강 
+                                    보건&middot;건강
                                 </a>
                             </li>
                             <li class="sub_item">
@@ -303,17 +311,15 @@
         </div>
     </header>
 
-
-
     <!-- main -->
     <main id="main">
         <div class="main_video_bg">
             <span class="blind">비디오가시성개선</span>
         </div>
 
-        <video preload="auto" class="video-bg tempClass" loop="" muted="" autoplay="" playsinline="" tabindex="0"> 
-        <source src="./assets/video/main_vod_2025fab_05.mp4" type="video/mp4">
-        </video>    
+        <video preload="auto" class="video-bg tempClass" loop="" muted="" autoplay="" playsinline="" tabindex="0">
+            <source src="./assets/video/main_vod_2025fab_05.mp4" type="video/mp4">
+        </video>
 
         <div class="main_search_box">
             <form method="get" name="searchForm" class="search_form">
@@ -333,9 +339,665 @@
         </button>
     </main>
 
-    <section>
-        hi
+    <section class="sc_info">
+        <div class="inner">
+            <h2 class="sc_title">안내</h2>
+            <div class="title_link_box">
+                <ul class="title_link_list">
+                    <li class="title_link_item">
+                        <a href="#" class="title_link">
+                            <span>민생충전</span>
+                            <i>
+                                <span class="blind">더보기아이콘</span>
+                            </i>
+                        </a>
+                    </li>
+                    <li class="title_link_item">
+                        <a href="#" class="title_link">
+                            <span>착한결제 캠페인</span>
+                            <i>
+                                <span class="blind">더보기아이콘</span>
+                            </i>
+                        </a>
+                    </li>
+                    <li class="title_link_item">
+                        <a href="#" class="title_link">
+                            <span>주요서비스</span>
+                            <i>
+                                <span class="blind">더보기아이콘</span>
+                            </i>
+                        </a>
+                    </li>
+                    <li class="title_link_item">
+                        <a href="#" class="title_link">
+                            <span>핵심정책</span>
+                            <i>
+                                <span class="blind">더보기아이콘</span>
+                            </i>
+                        </a>
+                    </li>
+                    <li class="title_link_item">
+                        <a href="#" class="title_link">
+                            <span>시민참여</span>
+                            <i>
+                                <span class="blind">더보기아이콘</span>
+                            </i>
+                        </a>
+                    </li>
+                    <li class="title_link_item">
+                        <a href="#" class="title_link">
+                            <span>부산의 공원</span>
+                            <i>
+                                <span class="blind">더보기아이콘</span>
+                            </i>
+                        </a>
+                    </li>
+                    <li class="title_link_item">
+                        <a href="#" class="title_link domoheon">
+                            <span>도모헌</span>
+                            <i>
+                                <span class="blind">더보기아이콘</span>
+                            </i>
+                        </a>
+                    </li>
+                    <li class="title_link_item">
+                        <a href="#" class="title_link">
+                            <span>전국체육대회</span>
+                            <i>
+                                <span class="blind">더보기아이콘</span>
+                            </i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sc_info_cont">
+                <ul class="card_list">
+                    <li class="card_item cd01">
+                        <div class="gra_bg"></div>
+                        <div class="card_link">
+                            <h3 class="card_title">
+                                부산시보
+                            </h3>
+                            <ul class="cd01_menu">
+                                <li>
+                                    <a href="#">
+                                        <span class="blind">부산이라 좋다</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="blind">Busan is good</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="blind">だから釜山</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="blind">美好釜山</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="card_item cd02">
+                        <div class="gra_bg"></div>
+                        <a href="#" class="card_link">
+                            <h3 class="card_title">
+                                통합예약
+                            </h3>
+
+                            <div class="txt_box">
+                                <p>간편하게 예약하세요.</p>
+                                <p>강좌/교육, 견학/체험, 대관/대여</p>
+                            </div>
+
+                            <button type="button" class="direct">
+                                <i>
+                                    <span class="blind">예약바로가기</span>
+                                </i>
+                            </button>
+                        </a>
+                    </li>
+                    <li class="card_item cd03">
+                        <div class="gra_bg"></div>
+                        <div class="card_link">
+                            <h3 class="card_title">
+                                문화<br>
+                                관광
+                            </h3>
+                            <ul class="cd03_list">
+                                <li class="cd03_item">
+                                    <a href="#">
+                                        <span class="blind">다봄</span>
+                                    </a>
+                                </li>
+                                <li class="cd03_item">
+                                    <a href="#">
+                                        <span class="blind">visit busan</span>
+                                    </a>
+                                </li>
+                                <li class="cd03_item">
+                                    <a href="#">
+                                        <span class="blind">부산갈맷길</span>
+                                    </a>
+                                </li>
+                                <li class="cd03_item">
+                                    <a href="#">
+                                        <span class="blind">MEDICAL BUSAN</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="card_item cd04">
+                        <div class="gra_bg"></div>
+                        <div class="card_link">
+                            <a href="#">
+                                <h3 class="mayor_tit">
+                                    <span>부산광역시장</span>
+                                    박형준
+                                </h3>
+                            </a>
+                            <ul class="mayor_list">
+                                <li class="mayor_item">
+                                    <a href="#">
+                                        공약&매니페스토
+                                        <i>
+                                            <span class="blind">더보기아이콘</span>
+                                        </i>
+                                    </a>
+                                </li>
+                                <li class="mayor_item">
+                                    <a href="#">
+                                        박형준의 오늘
+                                        <i>
+                                            <span class="blind">더보기아이콘</span>
+                                        </i>
+                                    </a>
+                                </li>
+                                <li class="mayor_item">
+                                    <a href="#">
+                                        도시비전
+                                        <i>
+                                            <span class="blind">더보기아이콘</span>
+                                        </i>
+                                    </a>
+                                </li>
+                                <li class="mayor_item">
+                                    <a href="#">
+                                        시민열린마루
+                                        <i>
+                                            <span class="blind">더보기아이콘</span>
+                                        </i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="sc_service_bar">
+                <ul class="service_list">
+                    <li class="service_item">
+                        <a href="#">
+                            <i></i>
+                            <span>경제</span>
+                        </a>
+                    </li>
+                    <li class="service_item">
+                        <a href="#">
+                            <i></i>
+                            <span>일자리&middot;교육</span>
+                        </a>
+                    </li>
+                    <li class="service_item">
+                        <a href="#">
+                            <i></i>
+                            <span>사회복지</span>
+                        </a>
+                    </li>
+                    <li class="service_item">
+                        <a href="#">
+                            <i></i>
+                            <span>여성&middot;가족</span>
+                        </a>
+                    </li>
+                    <li class="service_item">
+                        <a href="#">
+                            <i></i>
+                            <span>보건&middot;건강</span>
+                        </a>
+                    </li>
+                    <li class="service_item">
+                        <a href="#">
+                            <i></i>
+                            <span>도시&middot;건축&middot;주택</span>
+                        </a>
+                    </li>
+                    <li class="service_item">
+                        <a href="#">
+                            <i></i>
+                            <span>안전</span>
+                        </a>
+                    </li>
+                    <li class="service_item">
+                        <a href="#">
+                            <i></i>
+                            <span>환경보호</span>
+                        </a>
+                    </li>
+                    <li class="service_item">
+                        <a href="#">
+                            <i></i>
+                            <span>교통&middot;물류</span>
+                        </a>
+                    </li>
+                    <li class="service_item">
+                        <a href="#">
+                            <i></i>
+                            <span>해양농수산</span>
+                        </a>
+                    </li>
+                    <li class="service_item">
+                        <a href="#">
+                            <i></i>
+                            <span>행정</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </section>
+    <section class="sc_notice">
+        <div class="inner">
+            <h2 class="sc_title">알림</h2>
+
+            <div class="notice_box">
+                <div class="notice_tit">
+                    <h3>공지사항</h3>
+                    <a href="#">
+                        <span class="blind">공지사항바로가기</span>
+                        go +
+                    </a>
+                </div>
+                <div class="sc_notice_cont">
+                    <ul class="card_list">
+                        <li class="card_item">
+                            <div class="gra_bg"></div>
+                            <a href="#" class="card_link">
+                                <h3 class="card_title">
+                                    2025년 임산부 친환경농산물 꾸러미 지원사업 공급업체 모집 공고
+                                </h3>
+                                <p class="card_txt">
+                                    2025년 임산부 친환경농산물 꾸러미 지원사업 추진에 따른 공급업체 모집공고 1. 기 간 : 2024. 3. 14.(금) ~ 3. 21.(금) -
+                                    접수기간 : 3. 20(목) ~ 3. 21(금) 09:00~18:00 2. 내 용 : 붙임 공고문 참조붙임 2025년 임산부 친환경농산물 꾸러미
+                                    지원사업 공급업체 모집 공고문 1부.
+                                </p>
+                                <div class="date">
+                                    2025-03-14
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card_item">
+                            <div class="gra_bg"></div>
+                            <a href="#" class="card_link">
+                                <h3 class="card_title">
+                                    [동래여성인력개발센터] 국비지원 직업교육훈련 <생성형AI 활용 마케팅 전문가 과정> 교육생 모집
+                                </h3>
+                                <p class="card_txt">
+                                    [동래여성인력개발센터] 국비지원 직업교육훈련 생성형AI 활용 마케팅 전문가 과정 교육생 모집!동래여성새로일하기센터에서 국비지원 직업교육훈련 생성형AI
+                                    활용 마케팅 전문가 과정 교육생을 모집합니다.홍보, 마케팅 분야로 취업을 희망하시는 미취업여성들의 많은 신청 바랍니다.▫️ (고부가가치) 생성형 AI를
+                                    활용한 마케팅 전문가 과정▫️ ▶교육기간 : 2025. 4. 15.(화)~7. 09.(수) (월~금 13:30~17:30/ 총57일) ▶교육장소 :
+                                    동래여성인력개발센터 내 ▶모집인원 : 16명 (면접선발) ▶모집대상 1. 부산 거주 20~40대 초반 미취업 여성 2. 마케팅 분야로 취업의지가 확고한
+                                    자 3. 대학재학생의 경우 6개월 이내 졸업예정자 4. SNS 활동 및 마케팅 경험자 우대 ▶모집기간 : 2025. 4. 6.(일)까지 (일정에 따라
+                                    변경될 수 있음) ▶교육장소 : 동래여성인력개발센터 ▶ 교육내용 º 직업전문교육 - AI활용 브랜딩 전략, AI활용 사업계획서 작성, - AI활용
+                                    콘텐츠 제작(이미지,영상,음악), 퍼포먼스마케팅-검색광고, 검색엔진 최적화, - 프롬프트 기초와 응용, 블로그마케팅, 미리캔버스 활용법, 스마트스토어
+                                    개요와 마케팅, - 마케팅제안서 작성 및 발표, AI활용 포트폴리오 기획 및 제작 등 º 직무소양 교육 : 입학식, 수료식, 간담회, AI와 미래의
+                                    마케팅 º 취업대비 교육 : 취업서류 작성법과 실습, 면접대비 취업전략 º 현장실습: 기업체 협약을 통한 현장실습 (6일) º 취업분야 : 홍보,
+                                    마케팅 분야 ▶교육참여혜택 - 직훈참여촉진수당 1개월당 (60시간기준) 10만원지급 - 교통비 10만원지급 - 사후관리참여수당(취업) 10만원지급 -
+                                    전담 취업상담사의 1:1맞춤 취업지원 ▶ 신청방법 : 온라인신청, 전화, 방문 - 온라인 : https://naver.me/GV2FCNym -
+                                </p>
+                                <div class="date">
+                                    2025-03-13
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card_item">
+                            <div class="gra_bg"></div>
+                            <a href="#" class="card_link">
+                                <h3 class="card_title">
+                                    2025년 임산부 친환경농산물 꾸러미 지원사업 공급업체 모집 공고
+                                </h3>
+                                <p class="card_txt">
+                                    2025년 임산부 친환경농산물 꾸러미 지원사업 추진에 따른 공급업체 모집공고 1. 기 간 : 2024. 3. 14.(금) ~ 3. 21.(금) -
+                                    접수기간 : 3. 20(목) ~ 3. 21(금) 09:00~18:00 2. 내 용 : 붙임 공고문 참조붙임 2025년 임산부 친환경농산물 꾸러미
+                                    지원사업 공급업체 모집 공고문 1부.
+                                </p>
+                                <div class="date">
+                                    2025-03-12
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="notice_box_bottom">
+                    <ul class="notice_b_list">
+                        <li class="notice_b_item">
+                            <div class="notice_tit">
+                                <h3>고시공고</h3>
+                                <a href="#">
+                                    <span class="blind">고시공고바로가기</span>
+                                    go +
+                                </a>
+                            </div>
+                        </li>
+                        <li class="notice_b_item">
+                            <div class="notice_tit">
+                                <h3>채용정보</h3>
+                                <a href="#">
+                                    <span class="blind">채용정보바로가기</span>
+                                    go +
+                                </a>
+                            </div>
+                        </li>
+                        <li class="notice_b_item">
+                            <div class="notice_tit">
+                                <h3>시험공고</h3>
+                                <a href="#">
+                                    <span class="blind">시험공고바로가기</span>
+                                    go +
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sc_communicate">
+        <div class="inner">
+            <h2 class="sc_title">소통</h2>
+            <div class="flex">
+                <div class="commu_link_box">
+                    <h3>부산시의 모든 소식을 알려드립니다</h3>
+
+                    <ul class="commu_link_list">
+                        <li class="commu_link_item item01"><a href="#"><span>오늘</span>의 공연&전시 <i class="ico_plus"><span
+                                        class="blind">더보기 아이콘</span></i></a></li>
+                        <li class="commu_link_item item02"><a href="#">행사&축제 <i class="ico_plus"><span class="blind">더보기
+                                        아이콘</span></i></a></li>
+                        <li class="commu_link_item item03"><a href="#">보도자료 <i class="ico_plus"><span class="blind">더보기
+                                        아이콘</span></i></a></li>
+                        <li class="commu_link_item item04"><a href="#">부산시보 <i class="ico_plus"><span class="blind">더보기
+                                        아이콘</span></i></a></li>
+                        <li class="commu_link_item item05"><a href="#">알림배너 <i class="ico_plus"><span class="blind">더보기
+                                        아이콘</span></i></a></li>
+                        <li class="commu_link_item item06"><a href="#">부산튜브 <i class="ico_plus"><span class="blind">더보기
+                                        아이콘</span></i></a></li>
+                        <li class="commu_link_item item07"><a href="#">인스타그램 <i class="ico_plus"><span class="blind">더보기
+                                        아이콘</span></i></a></li>
+                        <li class="commu_link_item item08"><a href="#">블로그 <i class="ico_plus"><span class="blind">더보기
+                                        아이콘</span></i></a></li>
+                        <li class="commu_link_item item09"><a href="#">페이스북 <i class="ico_plus"><span class="blind">더보기
+                                        아이콘</span></i></a></li>
+                        <li class="commu_link_item item10"><a href="#">소통캐릭터 부기 <i class="ico_plus"><span
+                                        class="blind">더보기 아이콘</span></i></a></li>
+                        <li class="commu_link_item item11"><a href="#"><strong>D</strong>aliy <span>B</span>usan <i
+                                    class="ico_plus"><span class="blind">더보기 아이콘</span></i></a></li>
+                        <li class="commu_link_item item12"><a href="#">부산영어방송 <i class="ico_plus"><span
+                                        class="blind">더보기 아이콘</span></i></a></li>
+                        <li class="commu_link_item item13"><a href="#">Media Hub <i class="ico_plus"><span
+                                        class="blind">더보기 아이콘</span></i></a></li>
+                        <li class="commu_link_item item14"><a href="#">부산e스토리 (오감캠핑) <i class="ico_plus"><span
+                                        class="blind">더보기 아이콘</span></i></a></li>
+                    </ul>
+                </div>
+                <div class="commu_card">
+                    <ul class="social_list">
+                        <li class="social_item cd01">
+                            <a href="#">
+                                <h3 class="social_card_title">
+                                    <span>보도</span>
+                                    <span>자료</span>
+                                </h3>
+                                <p class="card_txt">
+                                    평생함께 청년모두가(家) 주거비 지원 신청 21일까지 접수… 서둘러 신청하세요
+                                </p>
+                            </a>
+                        </li>
+                        <li class="social_item cd02">
+                            <a href="#">
+                                <h3 class="social_card_title">
+                                    <span>부산</span>
+                                    <span>시보</span>
+                                </h3>
+                                <p class="card_txt">
+                                    제1기 부산시 어린이기자단 모집 … 글쓰기 자신 없어도 괜찮아요!
+                                </p>
+                            </a>
+                        </li>
+                        <li class="social_item cd03">
+                            <a href="#">
+                                <span class="blind">이미지카드</span>
+                            </a>
+                        </li>
+                        <li class="social_item cd04">
+                            <a href="#">
+                                <h3 class="social_card_title">
+                                    <span>부산</span>
+                                    <span>튜브</span>
+                                </h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sc_banner">
+        <div class="inner">
+            <h2 class="sc_title">배너</h2>
+            <div class="se-cont ct01">
+                <div class="swiper policy-banner swiper-container-initialized swiper-container-horizontal">
+
+                    <div class="swiper-button-prev banner-button-prev swiper-button-black">
+                        <span class="blind">이전버튼</span>
+                    </div>
+
+                    <!-- swiper -->
+                    <div class="swiper-wrapper banner-wrapper">
+                        <div class="swiper-slide banner-slide">
+                            <a href="#" class="banner-link">
+                                <img src="./assets/img/banner01.png" alt="배너1">
+                            </a>
+                        </div>
+                        <div class="swiper-slide banner-slide swiper-slide-prev">
+                            <a href="#" class="banner-link">
+                                <img src="./assets/img/banner02.png" alt="배너2">
+                            </a>
+                        </div>
+                        <div class="swiper-slide banner-slide swiper-slide-active">
+                            <a href="#" class="banner-link">
+                                <img src="./assets/img/banner03.png" alt="배너3">
+                            </a>
+                        </div>
+                        <div class="swiper-slide banner-slide swiper-slide-next">
+                            <a href="#" class="banner-link">
+                                <img src="./assets/img/banner04.jpg" alt="배너4">
+                            </a>
+                        </div>
+                        <div class="swiper-slide banner-slide swiper-slide-next">
+                            <a href="#" class="banner-link">
+                                <img src="./assets/img/banner05.png" alt="배너5">
+                            </a>
+                        </div>
+                        <div class="swiper-slide banner-slide swiper-slide-next">
+                            <a href="#" class="banner-link">
+                                <img src="./assets/img/banner06.png" alt="배너6">
+                            </a>
+                        </div>
+                        <div class="swiper-slide banner-slide swiper-slide-next">
+                            <a href="#" class="banner-link">
+                                <img src="./assets/img/banner07.png" alt="배너7">
+                            </a>
+                        </div>
+                        <div class="swiper-slide banner-slide swiper-slide-next">
+                            <a href="#" class="banner-link">
+                                <img src="./assets/img/banner08.jpg" alt="배너8">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next banner-button-next swiper-button-black">
+                        <span class="blind">다음버튼</span>
+                    </div>
+
+                    <div class="swiper-pagination banner-pagination swiper-pagination-clickable swiper-pagination-bullets">
+                        <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span>
+                        <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
+                        <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span>
+                        <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span>
+                        <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span>
+                        <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 6"></span>
+                        <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 7"></span>
+                        <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 8"></span>
+                    </div>
+
+                    <button class="btn btn-play sotong-play">일시정지</button>
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                </div>
+            </div>
+            <div class="sc_banner_link">
+                <a href="#">부산시 알림배너</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="footerTop">
+            <div class="inner">
+                <div class="familySite">
+                    <div class="cell">
+                        <ul>
+                            <li>
+                                <a href="#" title="사업소 사이트 리스트 열기" class="clickArrow office_access">사업소 사이트</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cell">
+                        <ul>
+                            <li>
+                                <a href="#" title="관련 사이트 리스트 열기" class="clickArrow office_access">관련 사이트</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerBody">
+            <div class="inner">
+                <article>
+                    <div class="footerMenu">
+                        <ul>
+                            <li><a href="#">약관</a></li>
+                            <li><a href="#">저작권 보호정책</a></li>
+                            <li><a href="#"><span>개인정보 처리방침</span></a></li>
+                            <li><a href="#">행정서비스헌장</a></li>
+                            <li><a href="#">뷰어다운로드</a></li>
+                            <li><a href="#">홈페이지 개선의견</a></li>
+                        </ul>
+                    </div>
+                    <div class="footerAddress">
+				    	<div class="footerLogo">
+				    		<a href="#"><img class="logo-busan" src="./assets/img/ico/footer_logo.svg" alt="부산광역시
+				    		BUSAN METROPOLITAN CITY"></a>
+				    	</div>
+				    	<div class="footTxt">
+				    		<p>(우 47545) 부산광역시 연제구 중앙대로 1001(연산동)</p>
+				    		<div>
+				    			<a href="#">시청 찾아오시는길</a>
+				    			<a href="#">주차안내</a>
+				    			<a href="#">이용안내</a>
+				    		</div>
+				    	</div>
+				    	<div class="copyright">
+				    	  <p class="copy">Copyright © Busan Metropolitan City. All rights reserved.</p>
+				    	</div>
+				    </div>
+                </article>
+                <article>
+                    <div class="footerSns">
+                        <a href="#" class="insta">
+                            <span class="blind">
+                                인스타그램
+                            </span>
+                        </a>
+                        <a href="#" class="twitter">
+                            <span class="blind">
+                                트위터
+                            </span>
+                        </a>
+                        <a href="#" class="facebook">
+                            <span class="blind">
+                                페이스북
+                            </span>
+                        </a>
+                        <a href="#" class="naverblog">
+                            <span class="blind">
+                                네이버 블로그
+                            </span>
+                        </a>
+                        <a href="#" class="kakaostory">
+                            <span class="blind">
+                                카카오스토리
+                            </span>
+                        </a>
+                        <a href="#" class="youtube">
+                            <span class="blind">
+                                유튜브채널
+                            </span>
+                        </a>
+                        <a href="#" class="befm">
+                            <span class="blind">
+                                부산영어방송재단
+                            </span>
+                        </a>
+                    </div>
+                    
+                    
+                    
+                    <div class="footMinwon">
+                        <div class="callTxt">
+                            <b>부산시 120 콜센터</b>
+                            <i>(지역번호 051, 유료)</i>
+                        </div>
+                        <div class="callNum">
+                            <a href="#">051-120</a>
+                        </div>
+                        <p class="txt">평일 08:30 ~ 18:30 야간․공휴일 당직실 전환</p>
+                    </div>
+                    <div class="footMark">
+                        <a href="#" alt="국가상징 알아보기">
+                            <img src="./assets/img/ico/ft_symbol.png" alt="국가상징 알아보기 이동">
+                        </a>
+                        <a href="#" title="웹접근성 품질인증 소개로 이동">
+                            <img src="./assets/img/ico/footer_wa.png" alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)">
+                        </a>
+                        </div>
+                </article>
+            </div>
+        </div>
+    </footer>
+
+    
+    <div class="menu_open_black">
+        <span class="blind">메뉴배경</span>
+    </div>
+
 </body>
 
 </html>

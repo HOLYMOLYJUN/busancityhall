@@ -5,3 +5,14 @@
     width: 94%;
     margin: 0 auto;
 }
+
+/* 세팅 */
+body{
+    color: #333;
+    font-size: 14px;
+    font-family: 'Noto Sans KR','sans-serif';
+    font-weight: 400;
+    letter-spacing: -0.05em;
+    position: relative;
+    min-width: 1600px;
+}
